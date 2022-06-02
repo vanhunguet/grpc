@@ -8,13 +8,12 @@ service TestApi {
 }
 
 message UserRequest {
-	string uuid = 1;
+	int32 uuid = 1;
 }
 
 message UserResponse {
-	string name = 1;
+	string name =1;
 	int32 age = 2;
 	string email = 3;
-
 }
 

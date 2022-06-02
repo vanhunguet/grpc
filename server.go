@@ -13,7 +13,11 @@ type testApiServer struct {
 }
 
 func (s *testApiServer) GetUser(ctx context.Context, req *pb.UserRequest) (*pb.UserResponse, error) {
-	return &pb.UserResponse{}, nil
+	return &pb.UserResponse{
+		Name:  "vanhung",
+		Age:   22,
+		Email: "vanhung@gmail",
+	}, nil
 }
 
 func main() {
